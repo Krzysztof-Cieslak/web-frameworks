@@ -17,6 +17,7 @@ statuses:
   error: true           # Red if we encounter errors restyling
 
 restylers:
+<<<<<<< HEAD
   - image: restyled/restyler-fantomas:v3.3.0
     command:
       - fantomas
@@ -77,3 +78,12 @@ restylers:
       - "**/*.yml"
       - "**/*.yaml"
     interpreters: []
+=======
+  - ormolu
+  - clang-format
+  - google-java-format
+  - black
+  - rubocop
+  - rustfmt
+  - php-cs-fixer
+>>>>>>> 86329d12... chore: Keep code style with restyled
