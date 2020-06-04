@@ -77,25 +77,18 @@ restylers:
       - "**/*.yml"
       - "**/*.yaml"
     interpreters: []
-=======
-  - ormolu
-  - clang-format
-  - google-java-format
-  - black
-  - rubocop
-  - rustfmt
-  - php-cs-fixer
->>>>>>> 86329d12... chore: Keep code style with restyled
-=======
-  - name: ormolu
-  - name: clang-format
-    include:
-    - "**/*.c"
-    - "**/*.cc"
-    - "**/*.h"
-  - name: google-java-format
-  - name: black
-  - name: rubocop
-  - name: rustfmt
-  - name: php-cs-fixer
->>>>>>> b21c0ef3... chore: Specify extension for clang-format
+  
+  # Missing clojure
+  # Missing crystal
+  # Missing csharp
+  # Missing dart
+  # Missing elixir
+  # Missing fsharp
+  # Missing go
+  # Missing julia
+  # Missing kotlin
+  # Missing nim
+  # Missing perl
+  # Missing pony
+  # Missing scala
+  # Missing swift
