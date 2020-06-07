@@ -12,82 +12,82 @@ pull_requests: true
 comments: true
 
 statuses:
-  differences: true     # Red when style differences are found
-  no_differences: true  # Green when no differences are found
-  error: true           # Red if we encounter errors restyling
+  differences: true # Red when style differences are found
+  no_differences: true # Green when no differences are found
+  error: true # Red if we encounter errors restyling
 
 restylers:
-- image: restyled/restyler-fantomas
-  command:
-  - fantomas
-- image: restyled/restyler-clang-format
-  command:
-  - clang-format
-  - -i
-  arguments: []
-  include:
-  - '**/*.c'
-  - '**/*.cc'
-  - '**/*.h'
-  - '**/*.cmake'
+  - image: restyled/restyler-fantomas
+    command:
+      - fantomas
+  - image: restyled/restyler-clang-format
+    command:
+      - clang-format
+      - -i
+    arguments: []
+    include:
+      - "**/*.c"
+      - "**/*.cc"
+      - "**/*.h"
+      - "**/*.cmake"
 
-- image: restyled/restyler-google-java-format
-  command:
-  - google-java-format
-  - --replace
-  arguments: []
-  include:
-  - '**/*.java'
-  interpreters: []
+  - image: restyled/restyler-google-java-format
+    command:
+      - google-java-format
+      - --replace
+    arguments: []
+    include:
+      - "**/*.java"
+    interpreters: []
 
-- image: restyled/restyler-black
-  command:
-  - black
-  arguments: []
-  include:
-  - '**/*.py'
-  interpreters:
-  - python
+  - image: restyled/restyler-black
+    command:
+      - black
+    arguments: []
+    include:
+      - "**/*.py"
+    interpreters:
+      - python
 
-- image: restyled/restyler-rustfmt
-  command:
-  - rustfmt
-  arguments: []
-  include:
-  - '**/*.rs'
-  interpreters: []
+  - image: restyled/restyler-rustfmt
+    command:
+      - rustfmt
+    arguments: []
+    include:
+      - "**/*.rs"
+    interpreters: []
 
-- image: restyled/restyler-php-cs-fixer
-  command:
-  - php-cs-fixer
-  - fix
-  arguments: []
-  include:
-  - '**/*.php'
-  interpreters: []
+  - image: restyled/restyler-php-cs-fixer
+    command:
+      - php-cs-fixer
+      - fix
+    arguments: []
+    include:
+      - "**/*.php"
+    interpreters: []
 
-- image: restyled/restyler-prettier
-  command:
-  - prettier
-  - --write
-  arguments: []
-  include:
-  - '**/*.json'
-  - '**/*.js'
-  - '**/*.yml'
-  - '**/*.yaml'
-  interpreters: []
-  # Missing clojure
-  # Missing crystal
-  # Missing csharp
-  # Missing dart
-  # Missing elixir
-  # Missing fsharp
-  # Missing go
-  # Missing julia
-  # Missing kotlin
-  # Missing nim
-  # Missing perl
-  # Missing pony
-  # Missing scala
-  # Missing swift
+  - image: restyled/restyler-prettier
+    command:
+      - prettier
+      - --write
+    arguments: []
+    include:
+      - "**/*.json"
+      - "**/*.js"
+      - "**/*.yml"
+      - "**/*.yaml"
+    interpreters: []
+    # Missing clojure
+    # Missing crystal
+    # Missing csharp
+    # Missing dart
+    # Missing elixir
+    # Missing fsharp
+    # Missing go
+    # Missing julia
+    # Missing kotlin
+    # Missing nim
+    # Missing perl
+    # Missing pony
+    # Missing scala
+    # Missing swift

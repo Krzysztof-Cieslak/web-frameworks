@@ -1,19 +1,19 @@
-import { Controller, Get, Param, Post } from '@nestjs/common';
+import { Controller, Get, Param, Post } from "@nestjs/common";
 
 @Controller()
 export class AppController {
   @Get()
-  getHello(): string {
-    return '';
+  public getHello(): string {
+    return "";
   }
 
-  @Get('/user/:id')
-  getUserId(@Param('id') id: string): string {
+  @Get("/user/:id")
+  public getUserId(@Param("id") id: string): string {
     return id;
   }
 
-  @Post('/user')
-  postUser(): string {
-    return '';
+  @Post("/user")
+  public postUser(): string {
+    return "";
   }
 }
